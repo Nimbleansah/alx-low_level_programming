@@ -3,13 +3,13 @@
 /**
  * main - Entry point
  *
- *return: always 0 (succes)
+ * Return: Always 0 (Succes)
  */
 
 int main(void)
 {
-	int thousandusand;
-	int hundreddred;
+	int thousand;
+	int hundred;
 	int tens;
 	int ones;
 
@@ -37,9 +37,9 @@ for ( thousand = 0 ; thousand < 10 ; thousand++)
 			}
 		}
 	}
-	putchar('\n');
-
 }
+	putchar('\n');
 	return (0);
 }
+
 
