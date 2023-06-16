@@ -42,4 +42,3 @@ for ( thousand = 0 ; thousand < 10 ; thousand++)
 	return (0);
 }
 
-
