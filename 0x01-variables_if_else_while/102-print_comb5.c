@@ -1,59 +1,45 @@
 #include <stdio.h>
+
 /**
  * main - Entry point
  *
  * Return: Always 0 (Succes)
  */
+
 int main(void)
 {
-	int n;
-	int i = 0;
 	int tho;
 	int hun;
 	int ten;
 	int bas;
 
-	for (n = 0 ; n < 100; n++)
-for ( thousand = 0 ; thousand < 10 ; thousand++)
+for ( tho = 0 ; tho < 10 ; tho++)
 {	
 
-	for (hundred = 0 ; hundred <= 10 ; hundred++)
+	for (hun = 0 ; hun <= 10 ; hun++)
 	{
-		if (n / 10 != i)
 	
-		for (tens = 0 ; tens < 10 ; tens++)
+		for (ten = 0 ; ten < 10 ; ten++)
 		{
-			putchar(n / 10 + '0');
-			putchar(i + '0');
-			if (n < 99)
-			for ( ones = 0 ; bas < 10 ; ones++)
+			for ( bas = 0 ; bas < 10 ; bas++)
 			{
-				putchar(',');
-				putchar('0' + thousand);
-				putchar('0' + hundred);
+				putchar('0' + tho);
+				putchar('0' + hun);
 				putchar(32);
-			}
-			i++;
-			if (i > 9)
-			{
-				i = 0;
-				putchar('0' + tens);
-				putchar('0' + ones);
-				if (!(thousand == 9 && hundred == 8))
+				putchar('0' + ten);
+				putchar('0' + bas);
+				if (!(tho == 9 && hun == 8))
 				{
 					putchar(',');
 					putchar(32);
 				}
-				ones++;
+				bas++;
 			}
-		}
-		else
-		{
-			i++;
 		}
 	}
 }
 	putchar('\n');
 	return (0);
 }
+
 
