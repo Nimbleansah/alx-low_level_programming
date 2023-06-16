@@ -12,8 +12,8 @@ int main(void)
 	char a;
 	for (a = 'a'; a<='z';a++)
 	{
-		putcher(a);
+		putchar(a);
 	}
-	putcher('\n');
+	putchar('\n');
 	return (0);
 }
