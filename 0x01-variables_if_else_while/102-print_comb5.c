@@ -8,32 +8,32 @@
 
 int main(void)
 {
-	int thousand;
-	int hundred;
-	int tens;
-	int ones;
+	int tho;
+	int hun;
+	int ten;
+	int bas;
 
-for ( thousand = 0 ; thousand < 10 ; thousand++)
+for ( tho = 0 ; tho < 10 ; tho++)
 {	
 
-	for (hundred = 0 ; hundred <= 10 ; hundred++)
+	for (hun = 0 ; hun <= 10 ; hun++)
 	{
 	
-		for (tens = 0 ; tens < 10 ; tens++)
+		for (ten = 0 ; ten < 10 ; ten++)
 		{
-			for ( ones = 0 ; ones < 10 ; ones++)
+			for ( bas = 0 ; bas < 10 ; bas++)
 			{
-				putchar('0' + thousand);
-				putchar('0' + hundred);
+				putchar('0' + tho);
+				putchar('0' + hun);
 				putchar(32);
-				putchar('0' + tens);
-				putchar('0' + ones);
-				if (!(thousand == 9 && hundred == 8))
+				putchar('0' + ten);
+				putchar('0' + bas);
+				if (!(tho == 9 && hun == 8))
 				{
 					putchar(',');
 					putchar(32);
 				}
-				ones++;
+				bas++;
 			}
 		}
 	}
