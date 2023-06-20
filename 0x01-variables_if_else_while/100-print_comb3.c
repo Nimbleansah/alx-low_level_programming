@@ -6,31 +6,25 @@
  */
 int main(void)
 {
-	int i = '0';
-	int j = '0';
-
-	while (i <= '9')
+	int i,j;
+	for (i = 45; i <= 56; i++)
 	{
-		while (j <= '9')
+		for (j = 49; j <= 57; j++)
 		{
-			putchar(i);
-			putchar(j);
-			if (j == '9' && i == '9')
+			if (j > i)
 			{
-				putchar('\n');
+				putchar(i);
+				putchar(j);
+				if (i != 56 || j != 57)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
-			else
-			{
-				putchar(',');
-				putchar(' ');
-			}
-			j++;
 		}
-		if (j >= '9')
-		{
-			j = '0';
-		}
-		i++;
+
 	}
+	putchar('\n');
 	return (0);
+
 }
