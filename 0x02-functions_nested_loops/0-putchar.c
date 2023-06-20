@@ -1,14 +1,18 @@
-#include <stdio.h>
+#include "holberton.h"
+/**
+ * main - Entry point
+ *
+ * Return: Alway 0 (Sucess)
+ */
 
-int main(void) {
-    putchar('_');
-    putchar('p');
-    putchar('u');
-    putchar('t');
-    putchar('c');
-    putchar('h');
-    putchar('a');
-    putchar('r');
-    putchar('\n');
-    return 0;
+int main(void)
+{
+	char *h = "Holberton\n";
+
+	while (*h)
+	{
+		_putchar(*h);
+		h++;
+	}
+	return (0);
 }
