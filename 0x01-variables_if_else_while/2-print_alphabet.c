@@ -9,16 +9,13 @@
  */
 int main(void)
 {
-	int count = 0;
-	char a;
-	while (a++ <= 9)
+	int count;
+	char a[26] ="abcdefghijklmnopqrstuvwxyz";
+	for (count = 0; count < 26 ; count++)
 	{
-		for (a = 'a'; a <= 'z';a++)
-		{
-			putchar(a);
-		}
-		putchar('\n');
-
+		putchar(a[count]);
 	}
+	putchar('\n');
 	return (0);
+
 }
