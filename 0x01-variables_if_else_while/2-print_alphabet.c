@@ -10,8 +10,8 @@
 int main(void)
 {
 	int count;
-	char a[26] ="abcdefghijklmnopqrstuvwxyz";
-	for (count = 0; count < 26 ; count++)
+	char a[26]="abcdefghijklmnopqrstuvwxyz";
+	for (count=0; count <26 ; count++)
 	{
 		putchar(a[count]);
 	}
