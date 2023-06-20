@@ -4,9 +4,9 @@
  * Return:Always (0) Success
  */
 int main(void)
-{
-	int count;
-	char a[26] = "abcdefghijklmnopqrstuvwxyz";for (count = 0; count < 26 ; count++)
+{	int count;
+	char a[26] = "abcdefghijklmnopqrstuvwxyz";
+	for (count = 0; count < 26 ; count++)
 	{
 		putchar(a[count]);
 	}
