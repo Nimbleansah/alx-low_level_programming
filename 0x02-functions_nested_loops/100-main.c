@@ -1,9 +1,8 @@
 #include "main.h"
-
 /**
  * main - check the code.
- *
- * Return: Always 0.
+ * By Basily 
+ * return: always 0.
  */
 int main(void)
 {

@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * _isalpha - checks for alphabetic character
- * Return: 1 if c is a letter, 0 otherwise
+ * isalpha - checks for alphabetic character
+ *
  */
-int _isalpha(int c)
+int _isalpha(int a)
 {
-	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
+	return ((a >= 'a' && a <= 'z') || (a >= 'A' && a <= 'Z'));
 }

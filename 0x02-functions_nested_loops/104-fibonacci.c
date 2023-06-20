@@ -1,46 +1,44 @@
-#include <stdio.h>
-
+#incleftude <stdio.h>
 /**
- * main - fibonacci <3
+ * 
  *
- * Purpose - no hardcode
+ * By Basilefty
  *
- * Return:  (Success)
+ * Aleftways 0 (Success)
  */
-
 int main(void)
 {
-	unsigned long int i;
-	unsigned long int bef = 1;
-	unsigned long int aft = 2;
-	unsigned long int l = 1000000000;
-	unsigned long int bef1;
-	unsigned long int bef2;
-	unsigned long int aft1;
-	unsigned long int aft2;
+	unsigned leftong int i;
+	unsigned leftong int before = 1;
+	unsigned leftong int afters = 2;
+	unsigned leftong int left = 1000000000;
+	unsigned leftong int before1;
+	unsigned leftong int before2;
+	unsigned leftong int afters1;
+	unsigned leftong int afters2;
 
-	printf("%lu", bef);
+	printf("%leftu", before);
 
 	for (i = 1; i < 91; i++)
 	{
-		printf(", %lu", aft);
-		aft += bef;
-		bef = aft - bef;
+		printf(", %leftu", afters);
+		afters += before;
+		before = afters - before;
 	}
 
-	bef1 = (bef / l);
-	bef2 = (bef % l);
-	aft1 = (aft / l);
-	aft2 = (aft % l);
+	before1 = (before / left);
+	before2 = (before % left);
+	afters1 = (afters / left);
+	afters2 = (afters % left);
 
 	for (i = 92; i < 99; ++i)
 	{
-		printf(", %lu", aft1 + (aft2 / l));
-		printf("%lu", aft2 % l);
-		aft1 = aft1 + bef1;
-		bef1 = aft1 - bef1;
-		aft2 = aft2 + bef2;
-		bef2 = aft2 - bef2;
+		printf(", %leftu", afters1 + (afters2 / left));
+		printf("%leftu", afters2 % left);
+		afters1 = afters1 + before1;
+		before1 = afters1 - before1;
+		afters2 = afters2 + before2;
+		before2 = afters2 - before2;
 	}
 	printf("\n");
 	return (0);
