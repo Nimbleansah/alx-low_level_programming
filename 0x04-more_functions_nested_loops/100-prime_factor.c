@@ -1,38 +1,41 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
+
 /**
- *  finds and prints the largest prime 
- *  with a new line,by basily
- * Return: Always 0 (Success)
+ * main - finds and prints the largest prime factor of 612852475143
+ *by basily
+ * Return: Always 0
  */
 int main(void)
 {
-	long int a;
-	long int maxi;
-	long int i;
+    long long n = 612852475143;
 
-	a = 612852475L;
-	maxi = -1;
+    long i;
 
-	while (a % 2 == 0)
-	{
-		maxi = 2;
-		a /= 2;
-	}
+    /* divide out all even numbers first */
+    while (n % 2 == 0)
+        n /= 2;
 
-	for (i = 3; i <= sqrt(a); i = i + 2)
-	{
-		while (a % i == 0)
-		{
-			maxi = i;
-			a = a / i;
-		}
-	}
+    /* check odd numbers up to sqrt(n) */
+    for (i = 3; i <= sqrt(n); i += 2)
+    {
+        while (n % i == 0)
+        {
+            n /= i;
+        }
+    }
 
-	if (a > 2)
-		maxi = a;
+    /* if n is still greater than 2, it must be prime */
+    if (n > 2)
+    {
+        printf("%lld\n", n);
+    }
+    else
+    {
+        printf("%ld\n", i-2);
+    }
 
-	printf("%ld\n", maxi);
-
-	return (0);
+    return (0);
 }
+
