@@ -7,11 +7,11 @@
  */
 int main(void)
 {
-	long int a;
+	long long a = 612852475143LL;
 	long int maxi;
 	long int i;
 
-	a = 612852475143;
+	a = 612852475143LL;
 	maxi = -1;
 
 	while (a % 2 == 0)
@@ -20,7 +20,7 @@ int main(void)
 		a /= 2;
 	}
 
-	for (i = 3; i <= sqrt(n); i = i + 2)
+	for (i = 3; i <= sqrt(a); i = i + 2)
 	{
 		while (a % i == 0)
 		{
@@ -30,7 +30,7 @@ int main(void)
 	}
 
 	if (a > 2)
-		maxi = n;
+		maxi = a;
 
 	printf("%ld\n", maxi);
 
