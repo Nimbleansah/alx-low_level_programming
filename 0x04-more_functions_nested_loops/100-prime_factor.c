@@ -7,11 +7,11 @@
  */
 int main(void)
 {
-	long long a = 612852475143LL;
+	long int a;
 	long int maxi;
 	long int i;
 
-	a = 612852475143LL;
+	a = 612852475L;
 	maxi = -1;
 
 	while (a % 2 == 0)
