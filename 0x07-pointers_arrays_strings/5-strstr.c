@@ -7,9 +7,9 @@
  */
 char *_strstr(char *stack, char *needle)
 {
-	for (; *haystack != '\0'; haystack++)
+	for (; *stack != '\0'; stack++)
 	{
-		char *l = haystack;
+		char *l = stack;
 		char *p = needle;
 
 		while (*l == *p && *p != '\0')
@@ -19,7 +19,7 @@ char *_strstr(char *stack, char *needle)
 		}
 
 		if (*p == '\0')
-			return (haystack);
+			return (stack);
 	}
 
 	return (0);
